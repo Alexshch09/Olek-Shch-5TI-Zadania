@@ -1,0 +1,49 @@
+* {
+    font-family: Cambria;
+}
+
+.lewy1,
+.lewy2 {
+    background-color: #E1BEE7;
+    width: 25%;
+    float: left;
+}
+
+.prawy1, .prawy2 {
+    width: 75%;
+    font-size: 170%;
+    text-align: center;
+}
+
+.prawy1 {
+    background-color: #9C64A6;
+    color: white;
+    height: 150px;
+    letter-spacing: 5px;
+    float: right;
+}
+
+.prawy2 {
+    color: indigo;
+    height: 580px;
+    float: right;
+}
+
+footer {
+    background-color: #9C64A6;
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+img:hover {
+    padding: 3px;
+    border: 1px dashed indigo;
+}
