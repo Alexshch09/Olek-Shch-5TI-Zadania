@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Stacja Paliw</title>
     <link rel="stylesheet" href="styl2.css">
+
+    <script src="skrypt.js"></script>
 </head>
 
 <body>
@@ -12,7 +14,7 @@
         <h1>Całodobowa stacja paliw</h1>
     </header>
 
-    <menu>
+    <main id="menu">
         <a href="stacja.html">
             <img src="home.png" alt="">
         </a>
@@ -20,46 +22,26 @@
             <img src="znak.png" alt="">
         </a>
         <a href="kwerendy.txt">Pobierz dokumenty</a>
-    </menu>
+    </main>
+    <div class="container">
+        <section class="lewy">
+            <h2>Orientacyjny koszt paliwa</h2>
+            <label for="rodzaj">Rodzaj paliwa (1-benzyna, 2-olej napędowy):</label><br>
+            <input type="number" id="rodzaj" name="rodzaj"><br>
+            <label for="litry">Ile litrów?</label><br>
+            <input type="number" id="litr" name="litry"><br>
+            <button onclick="oblicz();">OBLICZ</button>
+            <p id="cena"></p>
+        </section>
 
-    <div class="lewy">
-        <h2>Orientacyjny koszt paliwa</h2>
-        <label for="rodzaj">Rodzaj paliwa (1-benzyna, 2-olej napędowy):</label><br>
-        <input type="number" id="rodzaj" name="rodzaj"><br>
-        <label for="litry">Ile litrów?</label><br>
-        <input type="number" id="litr" name="litry"><br>
-        <button onclick="oblicz();">OBLICZ</button>
-        <p id="cena"></p>
-    </div>
-
-    <div class="prawy">
-        <img src="samochod.png" alt="samochód" id="samochod">
+        <section class="prawy">
+            <img src="samochod.png" alt="samochód" id="samochod">
+        </section>
     </div>
 
     <footer>
         <p>Strone opracowal: Olek Shchotkin</p>
     </footer>
-
-    <script>
-        function oblicz(){
-            let rodzaj = document.getElementById("rodzaj").value;
-            let litr = document.getElementById("litr").value;
-            let tekst = document.getElementById("cena");
-
-            let cena = 0;
-            
-            if (rodzaj == 1) {
-                cena = 4;
-            } else if (rodzaj == 2) {
-                cena=3.5;
-            } else {
-                cena = 0;
-            }
-            wartosc = cena * litr;
-
-            tekst.innerText="koszt paliwa: "+wartosc+" zl";
-        }
-    </script>
 </body>
 
 </html>
