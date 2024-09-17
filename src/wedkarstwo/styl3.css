@@ -44,12 +44,14 @@ input {
 }
 
 img {
-    box-shadow: 15px 15px dimgray;
+    box-shadow: 15px 15px 10px dimgray;
 }
 
 a {
     text-decoration: none;
+    background-color: mintcream;
     line-height: 70px;
+    color: seagreen;
     padding: 15px;
 }
 
