@@ -6,7 +6,14 @@
 .lewy2 {
     background-color: #E1BEE7;
     width: 25%;
-    float: left;
+}
+
+.lewy1 {
+    height: 400px;
+}
+
+.lewy2 {
+    height: 330px;
 }
 
 .prawy1, .prawy2 {
@@ -20,13 +27,12 @@
     color: white;
     height: 150px;
     letter-spacing: 5px;
-    float: right;
 }
 
 .prawy2 {
     color: indigo;
     height: 580px;
-    float: right;
+    margin-top: 0;
 }
 
 footer {
@@ -46,4 +52,13 @@ ul {
 img:hover {
     padding: 3px;
     border: 1px dashed indigo;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#link-index {
+    padding: 25px;
 }
